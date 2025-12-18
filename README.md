@@ -310,19 +310,5 @@ The system includes a vendor mapping feature that shows eco-friendly vendors in 
 - [ ] Mobile app version
 - [ ] Multi-language support
 
-## 📝 License
 
-[Add your license here]
-
-## 👥 Contributors
-
-[Add contributor information]
-
-## 📧 Contact
-
-[Add contact information]
-
----
-
-**Note**: This project is part of HackIndia 2k25. Make sure to set up all environment variables and dependencies before running the application.
 
