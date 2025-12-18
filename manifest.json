@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Eco-Friendly Product Assistant",
+  "version": "1.0",
+  "description": "Get eco-friendly product recommendations and find local vendors",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "https://*.openstreetmap.org/*",
+    "https://*.tile.openstreetmap.org/*",
+    "https://unpkg.com/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.in/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["vendor_map/*"],
+    "matches": ["<all_urls>"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+} 

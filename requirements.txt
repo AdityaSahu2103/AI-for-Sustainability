@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+sentence-transformers
+numpy
+faiss-cpu
+neo4j
+pandas
+python-dotenv
+google-generativeai

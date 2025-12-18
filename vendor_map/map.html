@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nearby Eco-Friendly Vendors</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .vendor-info {
+            padding: 10px;
+            max-width: 200px;
+        }
+        .vendor-name {
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+        .vendor-address {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .vendor-distance {
+            font-size: 0.8em;
+            color: #1976D2;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="vendors.js"></script>
+    <script src="map.js"></script>
+</body>
+</html> 
